@@ -18,3 +18,5 @@ PIL para manipulação de imagens
 ```python
     pip install PIL
 ```
+<br />
+![webp](https://user-images.githubusercontent.com/88719652/192044296-00a77a63-7147-4604-9b79-266bf4298da3.png)
