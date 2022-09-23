@@ -5,7 +5,7 @@
 from pathlib import Path
 from PIL import Image
 
-pastaDasImagens = 'PASTA COM AS IMAGENS' # pasta das images
+pastaDasImagens = input('Digite o caminho da pasta de imagens: ')
 
 def converter_para_webp(source):
     destino = source.with_suffix(".webp")
@@ -18,8 +18,7 @@ def main():
     arquivos = Path(pastaDasImagens).glob("**/*") # Todos os arquivos do diretório
     for arquivo in arquivos:
         arquivo_webp = converter_para_webp(arquivo)
-        print(arquivo_webp)
+        print("\n", arquivo_webp)
     print("\n\n Converção finalizada...\n\n")
-
 
 main()
